@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  
+    
+    
+    <div class="music-container" id="music-container">
+     <div class="app-title"><i class="fas fa-bars"></i><span>Music player</span></div>
+  
+        
+        <div class="img-container">
+            <img src="images\Treat_You_Better_(Official_Single_Cover)_by_Shawn_Mendes.png" alt="audio" id="cover">
+        </div>
+        <div class="info song-title" id="song-title"><i class="fas fa-music"></i><span> treat you better</span></div>
+        <div class="info song-artist" id="song-artist"><i class="fas fa-user-alt"></i><span>shawn mendes</span></div>
+        <div class="info year" id="year"><i class="fas fa-calendar-week"></i><span>2012</span></div>
+        
+        <audio src="music\Shawn Mendes - Treat You Better.mp3" id="audio"></audio>
+        
+        <div class="progress-container">
+          <div class="progress" id="progress">
+
+          </div>
+      </div>
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+              <i class="fas fa-forward"></i>
+            </button>
+          </div>
+         
+
+    </div>
+    <footer>&copy made by varun</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
